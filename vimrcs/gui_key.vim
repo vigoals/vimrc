@@ -14,7 +14,7 @@ if has("gui_running")
 	"粘贴
 	nnoremap <c-v> "+gP
 	vnoremap <c-v> d"+gP
-	inoremap <c-v> <esc>l"+gPi
+	inoremap <c-v> a<esc>"+gPxi
 	"剪切
 	vnoremap <c-x> "+x
 
@@ -27,4 +27,9 @@ if has("gui_running")
 	nnoremap <c-y> <c-r>
 	vnoremap <c-y> <esc><c-r>
 	inoremap <c-y> <esc><c-r>i
+
+	"全选
+	nnoremap <c-a> ggVG
+	vnoremap <c-a> <esc>ggVG
+	inoremap <c-a> <esc>ggVG
 endif
